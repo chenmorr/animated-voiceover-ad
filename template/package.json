@@ -1,0 +1,24 @@
+{
+  "name": "animated-voiceover-ad",
+  "private": true,
+  "scripts": {
+    "setup": "bash scripts/fetch-sounds.sh",
+    "vo": "bash scripts/prep-vo.sh",
+    "words": "node scripts/words.mjs",
+    "studio": "remotion studio src/index.ts",
+    "check": "tsc && node scripts/stills.mjs",
+    "render": "bash scripts/render-all.sh"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.487",
+    "@remotion/fonts": "4.0.487",
+    "react": "19.2.7",
+    "react-dom": "19.2.7",
+    "remotion": "4.0.487"
+  },
+  "devDependencies": {
+    "@types/react": "19.2.17",
+    "@types/react-dom": "19.2.3",
+    "typescript": "5.9.3"
+  }
+}
